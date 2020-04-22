@@ -11,10 +11,16 @@
   src: url("fonts/Work_Sans/WorkSans-Medium.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf")
+    format("truetype");
+}
+
 /* CSS for all common properties */
 
 html {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 #container {
@@ -48,21 +54,13 @@ html {
 
 h1,
 h2 {
+  font-family: "Work Sans", sans-serif;
   margin: 3rem auto -1rem auto;
 }
 
-.divider {
-  /* height: 1rem; */
-  width: 70%;
-  margin: 1rem auto;
-  border-top: 1px dashed #2c3a4746;
-}
-
-.spacer {
-  margin: 2rem auto;
-}
-
-#email, #password, #submit {
+#email,
+#password,
+#submit {
   display: block;
   min-width: 100%;
   /* Spacing */
@@ -71,15 +69,19 @@ h2 {
   /* Text properties */
   font-size: 1rem;
   text-align: center;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   /* Border */
   border: 2px solid #a8a5a5;
   border-radius: 0.2rem;
   transition: border 500ms;
 }
 
-
-input:hover, input:focus {
+#email:hover,
+#password:hover,
+#submit:hover,
+#email:focus,
+#password:focus,
+#submit:focus {
   border: 2px solid #2c3a47;
 }
 
@@ -90,7 +92,9 @@ input:hover, input:focus {
   transition: border 500ms;
 }
 
-#submit:hover, #submit:active, #submit:focus {
+#submit:hover,
+#submit:active,
+#submit:focus {
   border: 2px solid #f97f51;
 }
 
@@ -104,17 +108,6 @@ label {
   width: 2rem;
 }
 
-#logo {
-  display: block;
-  width: 90%;
-  min-height: 100px;
-  margin: 3rem auto -2rem auto;
-  background: url("../images/Logo.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 /* CSS for Mobile version */
 
 @media (orientation: portrait) {
@@ -125,7 +118,50 @@ label {
     background-blend-mode: screen;
     background-size: cover;
   }
+}
 
+/* Good looking links */
+
+a {
+  color: #1b9cfc;
+  text-decoration: none;
+  transition: color 500ms;
+}
+
+a:hover,
+a:focus {
+  color: #182c61;
+}
+
+/* Commonly used custom classes */
+
+.divider {
+  width: 70%;
+  margin: 1rem auto;
+  border-top: 1px dashed #2c3a4746;
+}
+
+.spacer {
+  margin: 2rem auto;
+}
+
+.daily-ui {
+  font-size: smaller;
+}
+
+.attribution {
+  font-size: x-small;
+}
+
+#logo {
+  display: block;
+  width: 90%;
+  min-height: 100px;
+  margin: 3rem auto -2rem auto;
+  background: url("../images/Logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* CSS for Desktop version */

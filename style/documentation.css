@@ -1,0 +1,123 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Fonts */
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("fonts/Work_Sans/WorkSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rubik Mono One";
+  src: url("fonts/Rubik_Mono/RubikMonoOne-Regular.ttf") format("truetype");
+}
+
+/* CSS for all common properties */
+
+html {
+  line-height: 2rem;
+}
+
+body {
+  /* Text properties */
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+
+  /* Colors */
+  background-color: #f7f1e3;
+  color: #2c2c54;
+
+  /* Spacing */
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik Mono One", sans-serif;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+ol {
+  margin-left: 3rem;
+}
+
+.container {
+  background-color: #f7f1e3;
+  margin: 0 auto;
+}
+
+/* Good looking links */
+
+a {
+  color: #474787;
+  text-decoration: none;
+  transition: color 500ms;
+}
+
+a:hover,
+a:focus {
+  color: #b33939;
+}
+
+/* Commonly used custom classes */
+
+.divider {
+  width: 70%;
+  margin: 1rem auto;
+  border-top: 1px dashed #2c3a4746;
+}
+
+.spacer {
+  margin: 2rem auto;
+}
+.center {
+  text-align: center;
+}
+
+.daily-ui {
+  font-size: smaller;
+  line-height: 1rem;
+}
+
+.attribution {
+  font-size: x-small;
+  line-height: 1rem;
+}
+
+#logo {
+  display: block;
+  width: 90%;
+  min-height: 100px;
+  margin: 2rem auto;
+  background: url("../images/Logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* CSS for Mobile version */
+
+@media (orientation: portrait) {
+}
+
+/* CSS for Desktop version */
+
+@media (orientation: landscape) {
+  html {
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+
+  .container {
+    width: 40vw;
+  }
+}
