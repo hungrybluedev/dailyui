@@ -1,0 +1,145 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Fonts */
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("fonts/Work_Sans/WorkSans-Medium.ttf") format("truetype");
+}
+
+/* CSS for all common properties */
+
+html {
+  font-family: "Work Sans", sans-serif;
+}
+
+#container {
+  /* Size of the container */
+  height: 100vh;
+  /* Properties to center everything */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /* Colors */
+  background: url("../images/circles.png"), linear-gradient(#f97f51, #fc427b);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-blend-mode: screen;
+}
+
+#main {
+  /* Size */
+  width: 100vw;
+  height: 100%;
+  /* Spacing and radius */
+  border-radius: 0.5rem;
+  padding: 1rem;
+  /* Colors */
+  color: #2c3a47;
+  /* Text properties */
+  text-align: center;
+}
+
+h1,
+h2 {
+  margin: 3rem auto -1rem auto;
+}
+
+.divider {
+  /* height: 1rem; */
+  width: 70%;
+  margin: 1rem auto;
+  border-top: 1px dashed #2c3a4746;
+}
+
+.spacer {
+  margin: 2rem auto;
+}
+
+#email, #password, #submit {
+  display: block;
+  min-width: 100%;
+  /* Spacing */
+  padding: 8px 0;
+  margin: 1rem 0;
+  /* Text properties */
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  /* Border */
+  border: 2px solid #a8a5a5;
+  border-radius: 0.2rem;
+  transition: border 500ms;
+}
+
+
+input:hover, input:focus {
+  border: 2px solid #2c3a47;
+}
+
+#submit {
+  border: none;
+  background-color: #fea47f;
+  border: 2px solid #fea47f;
+  transition: border 500ms;
+}
+
+#submit:hover, #submit:active, #submit:focus {
+  border: 2px solid #f97f51;
+}
+
+label {
+  display: flex;
+  font-size: smaller;
+}
+
+#agree {
+  /* display: inline; */
+  width: 2rem;
+}
+
+#logo {
+  display: block;
+  width: 90%;
+  min-height: 100px;
+  margin: 3rem auto -2rem auto;
+  background: url("../images/Logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* CSS for Mobile version */
+
+@media (orientation: portrait) {
+  #main {
+    background: url("../images/circles.png"), linear-gradient(#f1f5f4, #f97f51);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-blend-mode: screen;
+    background-size: cover;
+  }
+
+}
+
+/* CSS for Desktop version */
+
+@media (orientation: landscape) {
+  html {
+    font-size: 1.5rem;
+  }
+
+  #main {
+    width: 20rem;
+    height: 90%;
+    margin: 1in 0;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(#f1f5f4, #fea47f);
+  }
+}
