@@ -7,6 +7,7 @@ I\'m attempting to create all the design prompts in HTML5 and CSS. By doing so, 
 # Browse Projects
 
 1. [Sign up Form](001-SignUp/)
+2. [Payment Form](002-CheckoutForm/)
 
 # Contact
 
