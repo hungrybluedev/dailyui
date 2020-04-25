@@ -106,12 +106,12 @@ a:focus {
 
 /* CSS for Mobile version */
 
-@media (orientation: portrait) {
+@media (max-width: 768px) {
 }
 
 /* CSS for Desktop version */
 
-@media (orientation: landscape) {
+@media (min-width: 768px) {
   html {
     font-size: 1.5rem;
     text-align: justify;

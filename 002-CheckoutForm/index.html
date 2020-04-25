@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form | DailyUI | Hungry Blue Dev</title>
+    <link rel="stylesheet" href="../style/payment.css" type="text/css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="aside"></div>
+      <div class="main">
+        <div class="details">
+          <h1>Enter Card Details</h1>
+          <div class="number">
+            <input
+              type="text"
+              name="card-num"
+              id="card-num"
+              placeholder="Card number"
+              maxlength="16"
+            />
+          </div>
+          <div class="name-cvv">
+            <input
+              type="text"
+              name="card-owner"
+              id="card-owner"
+              placeholder="Name of Card holder"
+            />
+            <input
+              type="password"
+              name="card-cvv"
+              id="card-cvv"
+              placeholder="CVV"
+              maxlength="3"
+            />
+          </div>
+          <div class="expiry-and-logos">
+            <div id="expiry">
+                <select name="exp-month" id="exp-month">
+                    <option value="01">January</option>
+                    <option value="02">February</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                  </select>
+                  <select name="exp-year" id="exp-year">
+                    <option value="20">2020</option>
+                    <option value="21">2021</option>
+                    <option value="22">2022</option>
+                    <option value="23">2023</option>
+                    <option value="24">2024</option>
+                    <option value="25">2025</option>
+                  </select>
+            </div>
+            <div id="logos">
+                <div class="logo" id="visa"></div>
+                <div class="logo" id="mastercard"></div>
+                <div class="logo" id="rupay"></div>
+              </div>
+          </div>
+          
+          <div class="submit">
+            <input type="submit" value="Pay now" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
